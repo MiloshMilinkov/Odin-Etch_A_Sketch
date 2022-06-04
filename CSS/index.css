@@ -1,0 +1,72 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgb(255, 227, 187);
+}
+
+.gridContainer {
+    display: grid;
+    width: 600px;
+    height: 600px;
+    margin-bottom: 10px;
+}
+
+.grid-item {
+    background-color: white;
+    user-select: none;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.btnSize {
+    width: 100px;
+    height: 30px;
+}
+
+.optionContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.optionsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#color {
+    -webkit-appearance: none;
+    width: 50px;
+    height: 50px;
+    border: none;
+}
+
+input[type='color']:hover {
+    transform: scale(1.05);
+}
+
+input[type='color']:active {
+    transition: transform 0.05s ease-in-out;
+    transform: scale(1);
+}
+
+input[type='color'] {
+    -webkit-appearance: none;
+    width: 80px;
+    height: 80px;
+    border: none;
+}
+
+input[type='color']::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+input[type='color']::-webkit-color-swatch {
+    border: none;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
