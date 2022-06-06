@@ -11,21 +11,29 @@
 </head>
 
 <body>
-    <div class="gridContainer"></div>
-    <div class="optionsContainer">
-        <div class="sizeContainer optionContainer">
-            <button id="btnSize1" class="btnSize">16x16</button>
-            <button id="btnSize2" class="btnSize">32x32</button>
-            <button id="btnSize3" class="btnSize">64x64</button>
+    <div class="mainSection">
+        <div class="gridContainer"></div>
+        <div class="optionsContainer">
+            <div class="sizeContainer optionContainer">
+                <button id="btnSize1" class="btnSize">16x16</button>
+                <button id="btnSize2" class="btnSize">32x32</button>
+                <button id="btnSize3" class="btnSize">64x64</button>
+            </div>
+            <div class="colorContainer optionContainer">
+                <input type="color" id="color">
+            </div>
+            <div class="controlsContainer optionContainer">
+                <button id="btnControl1" class="btnControl">RGB MODE</button>
+                <button id="btnControl1" class="btnControl">CLEAR</button>
+                <button id="btnControl1" class="btnControl">64x64</button>
+            </div>
         </div>
-        <div class="colorContainer optionContainer">
-            <input type="color" id="color">
-        </div>
-        <div class="controlsContainer optionContainer">
-            <button>Control4</button>
-            <button>Control5</button>
-            <button>Control6</button>
-        </div>
+    </div>
+
+    <div id="footer">
+        <footer>
+            <p>Created by Milosh Milinkov. © 2022</p>
+        </footer>
     </div>
 </body>
 
