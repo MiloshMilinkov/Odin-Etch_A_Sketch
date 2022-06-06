@@ -4,8 +4,8 @@ const container = document.querySelector(".gridContainer");
 const buttons = document.querySelectorAll(".btnSize");
 
 function createGrid(rows, cols) {
-    container.style.gridTemplateColumns = `repeat(${rows}, 1fr)`
-    container.style.gridTemplateRows = `repeat(${cols}, 1fr)`
+    container.style.gridTemplateColumns = `repeat(${cols}, 1fr)`
+    container.style.gridTemplateRows = `repeat(${rows}, 1fr)`
     for (c = 0; c < (rows * cols); c++) {
         let cell = document.createElement("div");
         container.appendChild(cell).className = "grid-item";
